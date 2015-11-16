@@ -21,7 +21,9 @@ figdirs = {"RVAT-baseline": join(expdir, "RVAT baseline", "Figures"),
                            "CFD popularity", "figures"),
            "UNH-RVAT-turbinesFoam": join(foamrun_24x, "UNH-RVAT-turbinesFoam",
                                          "figures"),
-           "RM2-turbinesFoam": join(foamrun_24x, "RM2-turbinesFoam", "figures")}
+           "RM2-turbinesFoam": join(foamrun_24x, "RM2-turbinesFoam", "figures"),
+           "NTNU-HAWT-turbinesFoam": join(foamrun_24x, "NTNU-HAWT-turbinesFoam",
+                                          "figures")}
 
 figlists = {"RVAT-baseline": [],
             "RVAT-Re-dep": ["cp_vs_tsr.png", "mean_u.png", "mean_upvp.png"],
@@ -30,7 +32,8 @@ figlists = {"RVAT-baseline": [],
             "UNH-RVAT-turbinesFoam": ["meancontquiv.png", "kcont.png",
                                       "recovery-bar-chart.png",
                                       "perf-curves.png"],
-            "RM2-turbinesFoam": ["perf-curves.png"]}
+            "RM2-turbinesFoam": ["perf-curves.png"],
+            "NTNU-HAWT-turbinesFoam": ["perf-curves.png"]}
 
 
 for name, figlist in figlists.items():
