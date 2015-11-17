@@ -33,7 +33,7 @@ figlists = {"RVAT-baseline": [],
                                       "recovery-bar-chart.png",
                                       "perf-curves.png"],
             "RM2-turbinesFoam": ["perf-curves.png"],
-            "NTNU-HAWT-turbinesFoam": ["perf-curves.png"]}
+            "NTNU-HAWT-turbinesFoam": ["perf-curves.png", "wake-profiles.png"]}
 
 
 for name, figlist in figlists.items():
