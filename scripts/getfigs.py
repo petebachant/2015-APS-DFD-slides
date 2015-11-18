@@ -26,12 +26,12 @@ figdirs = {"RVAT-baseline": join(expdir, "RVAT baseline", "Figures"),
                                           "figures")}
 
 figlists = {"RVAT-baseline": [],
-            "RVAT-Re-dep": ["cp_vs_tsr.png", "mean_u.png", "mean_upvp.png"],
-            "AD": ["streamwise.png", "meancontquiv.png"],
-            "CFD-pop": ["cfd-online.png"],
+            "RVAT-Re-dep": [],
+            "AD": [],
+            "CFD-pop": [],
             "UNH-RVAT-turbinesFoam": ["meancontquiv.png", "kcont.png",
                                       "recovery-bar-chart.png",
-                                      "perf-curves.png"],
+                                      "perf-curves.png", "wake-profiles.png"],
             "RM2-turbinesFoam": ["perf-curves.png"],
             "NTNU-HAWT-turbinesFoam": ["perf-curves.png", "wake-profiles.png"]}
 
