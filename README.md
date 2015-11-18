@@ -1,13 +1,10 @@
 # 2015-APS-DFD-slides
-Slides for my talk at the 2015 APS-DFD meeting.
 
-
-## TODO
-
-- [ ] Link to open datasets used for validation
-- [ ] Link to case files
+Slides for [my talk](http://meetings.aps.org/Meeting/DFD15/Session/E28.3) at 
+the 2015 APS-DFD meeting.
 
 
 ## Acknowledgements
 
-Checkmark and X icons are from the Crystal Project.
+Checkmark and "x" icons are from the Crystal Project.
+
