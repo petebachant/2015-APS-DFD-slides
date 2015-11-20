@@ -23,7 +23,8 @@ figdirs = {"RVAT-baseline": join(expdir, "RVAT baseline", "Figures"),
                                          "figures"),
            "RM2-turbinesFoam": join(foamrun_24x, "RM2-turbinesFoam", "figures"),
            "NTNU-HAWT-turbinesFoam": join(foamrun_24x, "NTNU-HAWT-turbinesFoam",
-                                          "figures")}
+                                          "figures"),
+           "NACAFoil": join(foamrun_24x, "NACAFoil", "figures")}
 
 figlists = {"RVAT-baseline": [],
             "RVAT-Re-dep": [],
@@ -33,7 +34,8 @@ figlists = {"RVAT-baseline": [],
                                       "recovery-bar-chart.png",
                                       "perf-curves.png", "wake-profiles.png"],
             "RM2-turbinesFoam": ["perf-curves.png"],
-            "NTNU-HAWT-turbinesFoam": ["perf-curves.png", "wake-profiles.png"]}
+            "NTNU-HAWT-turbinesFoam": ["perf-curves.png", "wake-profiles.png"],
+            "NACAFoil": ["NACA-0012-0015-0018-0021-k-vs-cd.png"]}
 
 
 for name, figlist in figlists.items():
