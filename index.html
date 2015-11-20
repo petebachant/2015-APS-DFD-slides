@@ -274,8 +274,9 @@ Martin Wosnik (<a href="martin.wosnik@unh.edu">martin.wosnik@unh.edu</a>)
 <h2 id="Motivation">Motivation<a class="anchor-link" href="#Motivation">&#182;</a></h2><ul>
 <li>Experimental results showing promise for CFTs in arrays (<a href="http://dx.doi.org/10.1063/1.3608170">Dabiri, 2011)</a>, <a href="http://dx.doi.org/10.1080/14685248.2012.712698">Kinzel et al. (2012)</a>)</li>
 <li>Vertical mean velocity field strongest near-wake recovery mechanism for high-solidity CFTs (<a href="http://dx.doi.org/10.1080/14685248.2014.1001852">Bachant and Wosnik (2015)</a>)</li>
-<li>2-D blade-resolved RANS can't resolve vertical velocity</li>
-<li>3-D blade-resolved too expensive</li>
+<li>2-D blade-resolved CFD can't resolve vertical velocity</li>
+<li>3-D blade-resolved CFD too expensive</li>
+<li>Potential flow has no turbulent transport</li>
 <li>ALM for CFT turbine and array analysis/design?</li>
 </ul>
 
@@ -351,7 +352,7 @@ Martin Wosnik (<a href="martin.wosnik@unh.edu">martin.wosnik@unh.edu</a>)
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note how rare it is to share code. Papers show equations and results, but in order to build upon the work, researchers must re-implement, debug, etc. This is wasteful and inefficient. There are hardly any good reasons for this practice, but plenty of bad ones.</p>
-<p>I would have much rather contributed to someone else's code than start my own from scratch. While keeping your work secret ("hoarding" knowledge) may prevent people from using it first, it also prevents people from helping and collaborating with you.</p>
+<p>I would have much rather contributed to someone else's code than start my own from scratch. While keeping work secret may prevent people from using it first, it also prevents people from helping and collaborating with you.</p>
 
 </div>
 </div>
@@ -366,11 +367,8 @@ Martin Wosnik (<a href="martin.wosnik@unh.edu">martin.wosnik@unh.edu</a>)
 <li>Built on top of OpenFOAM</li>
 <li>Atmospheric BL modeling tools</li>
 <li>Additional LES models</li>
-<li>Generator torque control</li>
-<li>Blade pitch control</li>
 <li>Coupling with NREL's FAST</li>
-<li>HAWT farm only (no cross-flow turbines)</li>
-<li>ALM requires custom solvers</li>
+<li>HAWT farm only</li>
 <li>Feasible to adapt for CFTs?</li>
 </ul>
 
@@ -392,7 +390,7 @@ Martin Wosnik (<a href="martin.wosnik@unh.edu">martin.wosnik@unh.edu</a>)
 <li>Turbine, actuator line, and actuator line element are all software objects</li>
 </ul>
 </li>
-<li>Model both cross- and axial-flow turbines, standalone actuator lines</li>
+<li>Can model both cross- and axial-flow turbines, standalone actuator lines</li>
 </ul>
 
 </div>
@@ -482,30 +480,6 @@ $$
   <source src="videos/unh-rvat-alm-free-surface.ogv" type="video/ogg">
 Your browser does not support the video tag.
 </video>
-</center>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Sandia/DOE-RM2-cross-flow-turbine-case">Sandia/DOE RM2 cross-flow turbine case<a class="anchor-link" href="#Sandia/DOE-RM2-cross-flow-turbine-case">&#182;</a></h2><p><img width=45% class="float-right" src=figures/RM2-rendering.PNG></p>
-<p>Open dataset for low-solidity CFT acquired in UNH tow tank</p>
-<p><img width=50% src=figures/rm2_video_snap.png></p>
-<p><a href="https://github.com/UNH-CORE/RM2-tow-tank">github.com/UNH-CORE/RM2-tow-tank</a></p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Preliminary-results:-RM2-performance">Preliminary results: RM2 performance<a class="anchor-link" href="#Preliminary-results:-RM2-performance">&#182;</a></h2><center>
-<img width=80% src=figures/RM2-turbinesFoam_perf-curves.png>
 </center>
 </div>
 </div>
