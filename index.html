@@ -272,11 +272,16 @@ Martin Wosnik (<a href="martin.wosnik@unh.edu">martin.wosnik@unh.edu</a>)
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Motivation">Motivation<a class="anchor-link" href="#Motivation">&#182;</a></h2><ul>
-<li>Vertical mean velocity field strongest near-wake recovery mechanism for high-solidity CFTs (<a href="http://dx.doi.org/10.1080/14685248.2014.1001852">Bachant and Wosnik (2015)</a>)</li>
-<li>2-D blade-resolved CFD can't resolve vertical velocity</li>
-<li>3-D blade-resolved CFD too expensive</li>
+<li>Sought modeling strategy for capturing a VAT's vertical mean velocity field (dominant near-wake recovery mechanism for high-solidity VAT, see <a href="http://dx.doi.org/10.1080/14685248.2014.1001852">Bachant and Wosnik (2015, <em>J. Turbulence</em>)</a>)<ul>
+<li>2-D blade-resolved RANS can't resolve vertical velocity</li>
+<li>3-D blade-resolved RANS too expensive ($10^4$ CPU hours per case)</li>
 <li>Potential flow has no turbulent transport</li>
-<li>ALM for CFT turbine and array analysis/design?</li>
+<li>ALM for cross-flow turbine and array analysis/design?<ul>
+<li>NREL's SOWFA?</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -301,12 +306,12 @@ Martin Wosnik (<a href="martin.wosnik@unh.edu">martin.wosnik@unh.edu</a>)
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="turbinesFoam"><a href="https://github.com/turbinesFoam/turbinesFoam">turbinesFoam</a><a class="anchor-link" href="#turbinesFoam">&#182;</a></h2><ul>
-<li>New open-source ALM library for OpenFOAM—works with standard solvers</li>
-<li>Can model both cross- and axial-flow turbines, standalone actuator lines</li>
+<li>New open-source ALM library for OpenFOAM</li>
+<li>Models CFTs, AFTs, standalone actuator lines</li>
+<li>Compatible with standard solvers</li>
 <li>Inflow sampled away from element using cell-point interpolation</li>
 <li>Smearing parameter $\epsilon$ either $c/2$ or $2 \sqrt[3]{V_\mathrm{cell}}$ (whichever larger)</li>
-<li>Leishman–Beddoes dynamic stall models, flow curvature corrections, added mass model from Strickland (1981)</li>
-<li>Lifting-line based end effects model (no rotor parameters needed)—see Anderson (2001):</li>
+<li>Lifting-line based end effects model (see Anderson (2001)):</li>
 </ul>
 $$
 \alpha(\theta) = \frac{2b}{\pi c(\theta)} \sum_1^N A_n \sin n \theta + \sum_1^N n A_n \frac{\sin n \theta}{\sin \theta}
@@ -366,6 +371,24 @@ $$
 </center><center>
 <img width=65%, style="padding-left: 45px", src="figures/br-cfd-meancontquiv_exp.png">
 </center>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="UNH-RVAT-cross-flow-turbine-LES">UNH-RVAT cross-flow turbine LES<a class="anchor-link" href="#UNH-RVAT-cross-flow-turbine-LES">&#182;</a></h2><center>
+<video width=100% controls loop>
+  <source src="videos/unh-rvat-alm-les.ogv" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</center><!--
+<center>
+<iframe width="1000" height="500" src="https://www.youtube.com/embed/THZvV4R1vow?rel=0&autoplay=0" frameborder=0 allowfullscreen></iframe>
+</center>
+-->
 </div>
 </div>
 </div></section></section><section><section>
@@ -461,9 +484,9 @@ Your browser does not support the video tag.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Acknowledgements">Acknowledgements<a class="anchor-link" href="#Acknowledgements">&#182;</a></h2><p><img width=150px src=figures/nsf.png><img width=150px src=figures/us-doe.png><img width=150px src=figures/snl_logo.png></p>
-<p>To obtain or contribute to the code, see <a href="https://github.com/turbinesFoam/turbinesFoam">https://github.com/turbinesFoam/turbinesFoam</a></p>
-<p>Test cases and more available at <a href="http://git.io/v4Bzp">http://git.io/v4Bzp</a></p>
-<p>These slides available at <a href="http://petebachant.me/2015-APS-DFD-slides">http://petebachant.me/2015-APS-DFD-slides</a></p>
+<p>Get involved: <a href="https://github.com/turbinesFoam/turbinesFoam">https://github.com/turbinesFoam/turbinesFoam</a></p>
+<p>Case files: <a href="http://git.io/v4Bzp">http://git.io/v4Bzp</a></p>
+<p>These slides: <a href="http://petebachant.me/2015-APS-DFD-slides">http://petebachant.me/2015-APS-DFD-slides</a></p>
 
 </div>
 </div>
