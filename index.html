@@ -272,7 +272,6 @@ Martin Wosnik (<a href="martin.wosnik@unh.edu">martin.wosnik@unh.edu</a>)
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Motivation">Motivation<a class="anchor-link" href="#Motivation">&#182;</a></h2><ul>
-<li>Experimental results showing promise for CFTs in arrays (<a href="http://dx.doi.org/10.1063/1.3608170">Dabiri 2011)</a>, <a href="http://dx.doi.org/10.1080/14685248.2012.712698">Kinzel et al. (2012)</a>)</li>
 <li>Vertical mean velocity field strongest near-wake recovery mechanism for high-solidity CFTs (<a href="http://dx.doi.org/10.1080/14685248.2014.1001852">Bachant and Wosnik (2015)</a>)</li>
 <li>2-D blade-resolved CFD can't resolve vertical velocity</li>
 <li>3-D blade-resolved CFD too expensive</li>
@@ -301,50 +300,12 @@ Martin Wosnik (<a href="martin.wosnik@unh.edu">martin.wosnik@unh.edu</a>)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="NREL's-SOWFA">NREL's <a href="https://nwtc.nrel.gov/SOWFA">SOWFA</a><a class="anchor-link" href="#NREL's-SOWFA">&#182;</a></h2><ul>
-<li>Open-source extension for OpenFOAM</li>
-<li>Atmospheric BL modeling tools</li>
-<li>Additional LES models</li>
-<li>Coupling with NREL's FAST</li>
-<li>HAWT farm only</li>
-<li>Feasible to adapt for CFTs?</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="turbinesFoam"><a href="https://github.com/turbinesFoam/turbinesFoam">turbinesFoam</a><a class="anchor-link" href="#turbinesFoam">&#182;</a></h2><ul>
-<li>New actuator line modeling library for OpenFOAM</li>
-<li>Subclasses OpenFOAM's <code>fvOption</code><ul>
-<li>Works with standard solvers</li>
-</ul>
-</li>
-<li>Written in object-oriented style<ul>
-<li>Turbine, actuator line, and actuator line element are all software objects</li>
-</ul>
-</li>
+<li>New open-source ALM library for OpenFOAM—works with standard solvers</li>
 <li>Can model both cross- and axial-flow turbines, standalone actuator lines</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Distinctive-features">Distinctive features<a class="anchor-link" href="#Distinctive-features">&#182;</a></h2><ul>
 <li>Inflow sampled away from element using cell-point interpolation</li>
 <li>Smearing parameter $\epsilon$ either $c/2$ or $2 \sqrt[3]{V_\mathrm{cell}}$ (whichever larger)</li>
-<li>Three variants of the Leishman–Beddoes dynamic stall model</li>
-<li>Flow curvature corrections for CFTs</li>
-<li>Added mass model from Strickland (1981)</li>
+<li>Leishman–Beddoes dynamic stall models, flow curvature corrections, added mass model from Strickland (1981)</li>
 <li>Lifting-line based end effects model (no rotor parameters needed)—see Anderson (2001):</li>
 </ul>
 $$
